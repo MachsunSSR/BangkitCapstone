@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaction_headers",
+  "info": {
+    "singularName": "transaction-header",
+    "pluralName": "transaction-headers",
+    "displayName": "transactionHeader",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "transactionID": {
+      "type": "integer"
+    },
+    "barbershopID": {
+      "type": "integer"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "tanggalTransaksi": {
+      "type": "datetime"
+    },
+    "paymentType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
