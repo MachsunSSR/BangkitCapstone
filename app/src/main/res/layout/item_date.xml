@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/spacing_54"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_date"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/spacing_10"
+    android:paddingVertical="@dimen/spacing_18">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/sun"
+        android:textSize="@dimen/font_12" />
+
+    <View
+        android:layout_width="@dimen/spacing_1"
+        android:layout_height="@dimen/spacing_12" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/_1"
+        android:textSize="@dimen/font_12" />
+</LinearLayout>

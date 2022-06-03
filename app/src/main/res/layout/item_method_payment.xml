@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/spacing_8"
+    app:cardCornerRadius="@dimen/spacing_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_20">
+
+        <ImageView
+            android:id="@+id/imgPayment"
+            android:layout_width="@dimen/spacing_80"
+            android:scaleType="fitCenter"
+            android:layout_height="@dimen/spacing_20"
+            android:contentDescription="@string/cd_image_payment"
+            android:src="@drawable/ovo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/radio"
+            android:layout_width="@dimen/spacing_20"
+            android:layout_height="@dimen/spacing_20"
+            android:src="@drawable/ic_radio_selected"
+            android:contentDescription="@string/image_radio_selection" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
