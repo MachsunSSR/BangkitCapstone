@@ -1,57 +1,17 @@
-# 🚀 Getting started with Strapi
+# Cloud Computing Path
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+Designing and Planning Architecture, Designing Rest API and Deploying through Cloud Run for endpoint communication with Mobile Android Application through Google Cloud Platform. Database was created in Cloud SQL. Machine Learning model is deployed at VM Instance in Compute Engine at Google Cloud Platform.
 
-### `develop`
+# Database Design
+Here is the ERD of the application.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+![Capstone drawio (2)](https://user-images.githubusercontent.com/85722794/172056979-028a0aef-c99e-4058-9f05-170b2cc32cea.png)
 
-```
-npm run develop
-# or
-yarn develop
-```
+# REST API 
 
-### `start`
+Rest API was created using STRAPI API, and the database was integrated into Cloud SQL in Google Cloud Platform. 
+Then the API was deployed to Cloud Run for endpoint communication with Mobile Application
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+# Deploying ML Model
 
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+The model will be deployed to a VM Instance in Compute Engine with the specification of n2-standard-2 machine and firewall rules. Model will then be deployed through the usage of Flask API.
