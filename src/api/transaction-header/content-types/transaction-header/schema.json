@@ -15,20 +15,35 @@
     "transactionID": {
       "type": "integer"
     },
-    "barbershopID": {
-      "type": "integer"
-    },
     "userID": {
       "type": "integer"
-    },
-    "tanggalTransaksi": {
-      "type": "datetime"
     },
     "paymentType": {
       "type": "string"
     },
     "status": {
       "type": "string"
+    },
+    "namaFasilitas": {
+      "type": "string"
+    },
+    "hargaFasilitas": {
+      "type": "biginteger"
+    },
+    "barbershopName": {
+      "type": "string"
+    },
+    "bookingDate": {
+      "type": "date"
+    },
+    "bookingTime": {
+      "type": "time"
+    },
+    "totalBill": {
+      "type": "biginteger"
+    },
+    "guestCount": {
+      "type": "integer"
     }
   }
 }
