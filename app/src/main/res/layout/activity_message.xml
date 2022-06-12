@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.message.MessageActivity">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_32"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/cd_back"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_24"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/messages"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack"
+        app:layout_constraintStart_toEndOf="@id/imgBack"
+        app:layout_constraintTop_toTopOf="@id/imgBack" />
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="@dimen/spacing_69"
+        android:layout_height="@dimen/spacing_69"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:contentDescription="@string/cd_image_user"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="@id/imgBack"
+        app:layout_constraintTop_toBottomOf="@id/imgBack" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_20"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/dummy_user"
+        app:layout_constraintBottom_toBottomOf="@id/imgUser"
+        app:layout_constraintStart_toEndOf="@id/imgUser"
+        app:layout_constraintTop_toTopOf="@id/imgUser" />
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_32"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:autofillHints="username"
+        android:background="@drawable/bg_search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/spacing_15"
+        android:drawableTint="@color/primary"
+        android:hint="@string/search_people_or_message"
+        android:inputType="text"
+        android:padding="@dimen/spacing_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgUser" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSearch"
+        tools:listitem="@layout/item_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

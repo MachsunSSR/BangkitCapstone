@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Capstone Project V Barbershop</string>
+    <string name="app_name">Ambroise</string>
     <string name="go_back">Go back</string>
     <string name="image_auth">Image Auth</string>
     <string name="sign_up">Sign Up</string>
@@ -144,4 +144,28 @@
     <string name="status">Status</string>
     <string name="download_ticket">Download Ticket</string>
     <string name="available_slots">Available Slots</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="bank_information">Bank Information</string>
+    <string name="security">Security</string>
+    <string name="change_password">Change Password</string>
+    <string name="others">Others</string>
+    <string name="setting">Setting</string>
+    <string name="about_us">About Us</string>
+    <string name="help_center">Help Center</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="logout">Logout</string>
+    <string name="not_get_permission">Not getting permission</string>
+    <string name="failed_camera">Failed to show camera</string>
+    <string name="rotate_camera">Rotate camera</string>
+    <string name="close">Close</string>
+    <string name="messages">Messages</string>
+    <string name="cd_image_user">Image User</string>
+    <string name="search_people_or_message">Search people or message</string>
+    <string name="barbershop_terdekat">Barbershop Terdekat</string>
+    <string name="search_here">Search Here</string>
+    <string name="fill_your_data">Fill your data</string>
+    <string name="birth_date">Birth date</string>
+    <string name="gender">Gender</string>
+    <string name="update">Update</string>
 </resources>

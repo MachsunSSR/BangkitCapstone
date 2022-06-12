@@ -36,7 +36,8 @@
         android:src="@drawable/ic_envelope"
         app:layout_constraintBottom_toBottomOf="@+id/edit_email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edit_email" />
+        app:layout_constraintTop_toTopOf="@+id/edit_email"
+        app:tint="@color/black" />
 
     <EditText
         android:id="@+id/edit_email"
@@ -46,6 +47,7 @@
         android:layout_marginTop="@dimen/spacing_20"
         android:autofillHints="emailAddress"
         android:hint="@string/email"
+        android:includeFontPadding="false"
         android:inputType="textEmailAddress"
         android:textSize="@dimen/font_14"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,8 +61,10 @@
         android:contentDescription="@string/logo_edit_name"
         android:src="@drawable/ic_lock"
         app:layout_constraintBottom_toBottomOf="@+id/edit_password"
+        app:layout_constraintEnd_toEndOf="@+id/img_mail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edit_password" />
+        app:layout_constraintTop_toTopOf="@+id/edit_password"
+        app:tint="@color/black" />
 
     <EditText
         android:id="@+id/edit_password"
@@ -70,6 +74,7 @@
         android:layout_marginTop="@dimen/spacing_12"
         android:autofillHints="password"
         android:hint="@string/password"
+        android:includeFontPadding="false"
         android:inputType="textPassword"
         android:textSize="@dimen/font_14"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_20"
         android:background="@drawable/bg_button"
+        android:includeFontPadding="false"
         android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/whiter"
@@ -135,6 +141,7 @@
         android:layout_marginTop="@dimen/spacing_12"
         android:background="@drawable/bg_button_gray"
         android:drawableStart="@drawable/ic_google"
+        android:includeFontPadding="false"
         android:paddingStart="@dimen/spacing_22"
         android:paddingEnd="@dimen/spacing_46"
         android:text="@string/login_with_google"

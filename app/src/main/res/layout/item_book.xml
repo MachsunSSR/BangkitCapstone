@@ -2,8 +2,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="?attr/selectableItemBackground"
     android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
     app:cardCornerRadius="@dimen/spacing_12">
 
     <LinearLayout
@@ -105,32 +105,37 @@
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/divider">
 
-            <androidx.appcompat.widget.AppCompatButton
+            <TextView
                 android:id="@+id/btnCancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button_outline"
                 android:fontFamily="@font/inter_semibold"
-                android:paddingHorizontal="@dimen/spacing_13"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/spacing_12"
                 android:text="@string/cancel_booking"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/primary"
                 android:textSize="@dimen/font_12" />
 
             <View
-                android:layout_width="@dimen/spacing_17"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
                 android:layout_height="@dimen/spacing_1" />
 
-            <androidx.appcompat.widget.AppCompatButton
+            <TextView
                 android:id="@+id/btnView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button"
                 android:fontFamily="@font/inter_semibold"
-                android:paddingHorizontal="@dimen/spacing_13"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/spacing_12"
                 android:text="@string/view_ticket"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/whiter"
                 android:textSize="@dimen/font_12" />

@@ -71,4 +71,6 @@
     <dimen name="spacing_125">125dp</dimen>
     <dimen name="spacing_40">40dp</dimen>
     <dimen name="spacing_36">36dp</dimen>
+    <dimen name="spacing_120">120dp</dimen>
+    <dimen name="spacing_55">55dp</dimen>
 </resources>
