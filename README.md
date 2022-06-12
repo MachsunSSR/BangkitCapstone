@@ -1,6 +1,6 @@
 # Cloud Computing Path
 
-Designing and Planning Architecture, Designing Rest API and Deploying through Cloud Run for endpoint communication with Mobile Android Application through Google Cloud Platform. Database was created in Cloud SQL. Machine Learning model is deployed at VM Instance in Compute Engine at Google Cloud Platform.
+Designing and Planning Architecture, Designing Rest API and Deploying through Cloud Run for endpoint communication with Mobile Android Application through Google Cloud Platform. Database was created in Cloud SQL. Machine Learning model is deployed at App Engine at Google Cloud Platform.
 
 # Database Design
 Here is the ERD of the application.
@@ -14,4 +14,4 @@ Then the API was deployed to Cloud Run for endpoint communication with Mobile Ap
 
 # Deploying ML Model
 
-The model will be deployed to a VM Instance in Compute Engine with the specification of n2-standard-2 machine and firewall rules. Model will then be deployed through the usage of Flask API.
+The model will be deployed to an App Engine and Flask API will also be used as the endpoint for Mobile App to connect to the Machine Learning Model
