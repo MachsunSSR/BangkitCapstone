@@ -1,6 +1,11 @@
 # Ambroise
-Virtual Hairstyle and Smart Barber Application <br>
-[Download Here](https://bit.ly/ApkBangkitCapstone)  
+![Desktop - 1](https://user-images.githubusercontent.com/57492781/173279340-0c35646b-c533-4a31-96ce-a772132c0eed.png)
+
+## Virtual Hairstyle and Smart Barber Application <br>
+## [Download Here](https://bit.ly/ApkBangkitCapstone)  
+
+![iPhone 13 Pro](https://user-images.githubusercontent.com/57492781/173279370-07ad0d22-1f22-4277-8aeb-0987e2e3b291.png)
+
 
 # Roles :
 - Machine Learning Developer
