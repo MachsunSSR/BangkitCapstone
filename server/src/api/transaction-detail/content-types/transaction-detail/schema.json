@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaction_details",
+  "info": {
+    "singularName": "transaction-detail",
+    "pluralName": "transaction-details",
+    "displayName": "transactionDetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "transactionID": {
+      "type": "integer",
+      "required": true
+    },
+    "fasilitasID": {
+      "type": "integer",
+      "required": true
+    },
+    "haircutID": {
+      "type": "integer"
+    },
+    "guestCount": {
+      "type": "integer",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    },
+    "bookingDate": {
+      "type": "date"
+    },
+    "bookingTime": {
+      "type": "time"
+    },
+    "totalBill": {
+      "type": "float"
+    }
+  }
+}

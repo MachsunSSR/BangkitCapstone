@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.detail.book.BookServiceFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/font_32"
+            android:layout_marginTop="@dimen/spacing_48"
+            android:elevation="@dimen/spacing_8"
+            app:cardCornerRadius="@dimen/spacing_20"
+            app:cardElevation="@dimen/spacing_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_20">
+
+                <TextView
+                    android:id="@+id/tvCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_12"
+                    android:includeFontPadding="false"
+                    android:text="@string/august"
+                    android:textAlignment="center" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_date" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/availableSlots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_19"
+            android:layout_marginBottom="@dimen/spacing_32"
+            app:cardCornerRadius="@dimen/spacing_20"
+            app:cardElevation="@dimen/spacing_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/calendar"
+            app:layout_constraintStart_toStartOf="@id/calendar"
+            app:layout_constraintTop_toBottomOf="@id/calendar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_20"
+                android:paddingVertical="@dimen/spacing_32">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:text="@string/available_slots"
+                    android:textSize="@dimen/font_16" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSlotTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/spacing_16"
+                    android:layout_weight="1"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_slot_time" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

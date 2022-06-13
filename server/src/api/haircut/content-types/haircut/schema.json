@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "haircuts",
+  "info": {
+    "singularName": "haircut",
+    "pluralName": "haircuts",
+    "displayName": "Haircut",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "haircutID": {
+      "type": "integer"
+    },
+    "namaHaircut": {
+      "type": "string"
+    },
+    "jenisHaircut": {
+      "type": "string"
+    },
+    "gambarHaircut": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "targetHaircut": {
+      "type": "string"
+    },
+    "augmentedFile": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

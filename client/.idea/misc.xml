@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.3098958333333333" />
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/simple_list_item_2.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_button.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/bg_button_gray.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/bg_button_guest.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/bg_button_outline.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_button_promo.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_circle_camera.xml" value="0.153" />
+        <entry key="app/src/main/res/drawable/bg_copy.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/bg_date.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_edit_text.xml" value="0.1755" />
+        <entry key="app/src/main/res/drawable/bg_fab_home.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/bg_item_facilities.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/bg_label.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_label_primary.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_label_primary_outlined.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_layout_guest.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/bg_promo.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_rating.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/bg_rating_selected.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_search.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/bg_slot_time.xml" value="0.153" />
+        <entry key="app/src/main/res/drawable/bg_view_bottom_navigation.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/bg_view_home.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/dotted.xml" value="0.4527395629882813" />
+        <entry key="app/src/main/res/drawable/ic_arrow.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_barber.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_bell.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_discover.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_envelope.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/ic_google.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/ic_logo_register.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_person_circle.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.1" />
+        <entry key="app/src/main/res/font/inter.xml" value="0.1361111111111111" />
+        <entry key="app/src/main/res/layout-v23/activity_message.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout-v23/fragment_discover.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_arcamera.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_book.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.3395843505859375" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.28254847645429365" />
+        <entry key="app/src/main/res/layout/activity_first_form.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.30407509135803135" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_message.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/activity_notification.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.3050750732421875" />
+        <entry key="app/src/main/res/layout/activity_review.xml" value="0.3130733944954128" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_ticket.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_transaction.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_book_confirm.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_book_date.xml" value="0.3268698060941828" />
+        <entry key="app/src/main/res/layout/fragment_book_service.xml" value="0.23949579831932774" />
+        <entry key="app/src/main/res/layout/fragment_booking.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_discover.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_payment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3940949935815148" />
+        <entry key="app/src/main/res/layout/fragment_select_payment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_book.xml" value="0.27620630623406445" />
+        <entry key="app/src/main/res/layout/item_date.xml" value="0.4560221354166667" />
+        <entry key="app/src/main/res/layout/item_facilities.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/item_facitilies.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/item_grid_barbershop.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_haircut.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_haircut_camera.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/item_list_barbershop.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_message.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_method_payment.xml" value="0.2904191616766467" />
+        <entry key="app/src/main/res/layout/item_notification.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_promo.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/item_rating.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/item_review.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_slide_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_slide_home.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/item_slot_time.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/view_bottom_navigation.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/view_menu_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/view_menu_top_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/view_search.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

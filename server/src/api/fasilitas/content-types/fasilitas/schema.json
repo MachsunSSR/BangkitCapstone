@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facilities",
+  "info": {
+    "singularName": "fasilitas",
+    "pluralName": "facilities",
+    "displayName": "Fasilitas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fasilitasID": {
+      "type": "integer"
+    },
+    "jenisFasilitas": {
+      "type": "string"
+    },
+    "hargaFasilitas": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_navigation"
+    app:startDestination="@id/bookServiceFragment">
+
+    <fragment
+        android:id="@+id/bookServiceFragment"
+        android:name="com.bangkit.ambroise.ui.detail.book.BookServiceFragment"
+        android:label="fragment_book_service"
+        tools:layout="@layout/fragment_book_service" >
+        <action
+            android:id="@+id/action_bookServiceFragment_to_bookDateFragment"
+            app:destination="@id/bookDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDateFragment"
+        android:name="com.bangkit.ambroise.ui.detail.book.BookDateFragment"
+        android:label="BookDateFragment" >
+        <action
+            android:id="@+id/action_bookDateFragment_to_bookConfirmFragment"
+            app:destination="@id/bookConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookConfirmFragment"
+        android:name="com.bangkit.ambroise.ui.detail.book.BookConfirmFragment"
+        android:label="BookConfirmFragment" >
+        <action
+            android:id="@+id/action_bookConfirmFragment_to_selectPaymentFragment"
+            app:destination="@id/selectPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPaymentFragment"
+        android:name="com.bangkit.ambroise.ui.detail.book.payment.SelectPaymentFragment"
+        android:label="SelectPaymentFragment" />
+</navigation>

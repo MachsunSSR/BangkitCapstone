@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaction_headers",
+  "info": {
+    "singularName": "transaction-header",
+    "pluralName": "transaction-headers",
+    "displayName": "transactionHeader",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "transactionID": {
+      "type": "integer"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "paymentType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "namaFasilitas": {
+      "type": "string"
+    },
+    "hargaFasilitas": {
+      "type": "biginteger"
+    },
+    "barbershopName": {
+      "type": "string"
+    },
+    "bookingDate": {
+      "type": "date"
+    },
+    "bookingTime": {
+      "type": "time"
+    },
+    "totalBill": {
+      "type": "biginteger"
+    },
+    "guestCount": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0088E0</color>
+    <color name="btn_guest">#87BFE9</color>
+    <color name="primary_darker">#0074BF</color>
+    <color name="primary_tr">#800088E0</color>
+    <color name="secondary">#FF9138</color>
+    <color name="black">#FF000000</color>
+    <color name="black_tr">#80000000</color>
+    <color name="border">#DADADA</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="gray_darker">#797F83</color>
+    <color name="white">#E5E5E5</color>
+    <color name="whiter">#FFFFFFFF</color>
+    <color name="ic_gray">#9E9E9E</color>
+    <color name="ic_gray_tr">#809E9E9E</color>
+    <color name="link">#2B8FEB</color>
+    <color name="rating">#E24C3B</color>
+    <color name="facilities">#D3CEF1</color>
+    <color name="bg_search">#F9F9F9</color>
+    <color name="status">#2FD274</color>
+</resources>

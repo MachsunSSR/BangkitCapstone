@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_32"
+        tools:context=".ui.detail.book.BookServiceFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBarber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_32"
+            android:background="@color/gray"
+            app:cardCornerRadius="@dimen/spacing_12"
+            app:cardElevation="@dimen/spacing_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/spacing_16">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imgBarber"
+                    android:layout_width="@dimen/spacing_100"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/placeholder"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvBarber"
+                    app:riv_corner_radius="@dimen/spacing_12" />
+
+                <TextView
+                    android:id="@+id/tvBarber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_19"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:maxLines="1"
+                    android:text="@string/dummy_barber"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgBarber"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="3"
+                    android:text="@string/dummy_address"
+                    android:textColor="@color/ic_gray"
+                    android:textSize="@dimen/font_12"
+                    app:layout_constraintEnd_toEndOf="@id/tvBarber"
+                    app:layout_constraintStart_toStartOf="@id/tvBarber"
+                    app:layout_constraintTop_toBottomOf="@id/tvBarber" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/layoutBookingTypes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_28"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/cvBarber">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/booking_types" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/book_a_visit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutChoiceTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_9"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/layoutBookingTypes">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/choice_of_service_time" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/dummy_datetime" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_9"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/layoutChoiceTime">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/service" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/dummy_service" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutGuest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_9"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/layoutService">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/guest" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/_2" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_5"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@drawable/dotted"
+            app:layout_constraintEnd_toEndOf="@id/layoutGuest"
+            app:layout_constraintStart_toStartOf="@id/layoutGuest"
+            app:layout_constraintTop_toBottomOf="@id/layoutGuest" />
+
+        <LinearLayout
+            android:id="@+id/layoutBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_16"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/bill" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/dummy_bill" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAdditionalCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_9"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/layoutBill">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/additional_cost" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/dummy_cost" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_5"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@drawable/dotted"
+            app:layout_constraintEnd_toEndOf="@id/layoutAdditionalCost"
+            app:layout_constraintStart_toStartOf="@id/layoutAdditionalCost"
+            app:layout_constraintTop_toBottomOf="@id/layoutAdditionalCost" />
+
+        <LinearLayout
+            android:id="@+id/layoutTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_16"
+            app:layout_constraintEnd_toEndOf="@id/cvBarber"
+            app:layout_constraintStart_toStartOf="@id/cvBarber"
+            app:layout_constraintTop_toBottomOf="@id/divider2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/total" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/dummy_bill" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

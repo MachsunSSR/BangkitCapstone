@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "barbershops",
+  "info": {
+    "singularName": "barbershop",
+    "pluralName": "barbershops",
+    "displayName": "barbershop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fasilitasID": {
+      "type": "integer"
+    },
+    "namaBarbershop": {
+      "type": "string"
+    },
+    "alamatBarbershop": {
+      "type": "string"
+    },
+    "jamOperasional": {
+      "type": "time"
+    },
+    "deskripsiBarbershop": {
+      "type": "text"
+    },
+    "ratingBarbershop": {
+      "type": "decimal"
+    },
+    "hubunganFasilitas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fasilitas.fasilitas"
+    }
+  }
+}

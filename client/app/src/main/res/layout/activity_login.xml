@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_32"
+    tools:context=".ui.auth.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_logo_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_32"
+        android:contentDescription="@string/image_auth"
+        android:src="@drawable/ic_logo_auth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:text="@string/login"
+        android:textSize="@dimen/font_36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo_auth" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/email"
+        android:src="@drawable/ic_envelope"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_email"
+        app:tint="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="@dimen/spacing_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:autofillHints="emailAddress"
+        android:hint="@string/email"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_mail"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/img_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo_edit_name"
+        android:src="@drawable/ic_lock"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_password"
+        app:layout_constraintEnd_toEndOf="@+id/img_mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_password"
+        app:tint="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="@dimen/spacing_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginTop="@dimen/spacing_12"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:includeFontPadding="false"
+        android:inputType="textPassword"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_mail"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/forgot_password"
+        android:textColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/spacing_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:background="@drawable/bg_button"
+        android:includeFontPadding="false"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/whiter"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_forgot_password" />
+
+    <LinearLayout
+        android:id="@+id/divider_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_12"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/spacing_15"
+        app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="@dimen/spacing_0"
+            android:layout_height="@dimen/spacing_1"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_12"
+            android:text="@string/or"
+            android:textSize="@dimen/font_14" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="@dimen/spacing_0"
+            android:layout_height="@dimen/spacing_1"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_12"
+        android:background="@drawable/bg_button_gray"
+        android:drawableStart="@drawable/ic_google"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/spacing_22"
+        android:paddingEnd="@dimen/spacing_46"
+        android:text="@string/login_with_google"
+        android:textAllCaps="false"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintTop_toBottomOf="@id/divider_login" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/dont_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_google" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

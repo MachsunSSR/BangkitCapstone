@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_32"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/cd_back"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_24"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/barbershop_terdekat"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack"
+        app:layout_constraintStart_toEndOf="@id/imgBack"
+        app:layout_constraintTop_toTopOf="@id/imgBack" />
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_32"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:background="@drawable/bg_search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/spacing_12"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/spacing_12"
+        android:paddingVertical="@dimen/spacing_16"
+        android:text="@string/search_here"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/font_12"
+        app:drawableTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgBack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBarbershop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSearch"
+        tools:listitem="@layout/item_list_barbershop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

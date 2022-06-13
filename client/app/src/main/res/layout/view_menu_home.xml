@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_32"
+    android:layout_marginTop="@dimen/spacing_28"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/vSearch">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/spacing_8"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_54"
+            android:layout_marginBottom="@dimen/spacing_7"
+            android:contentDescription="@string/cd_scissor"
+            android:src="@drawable/ic_scissor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/barber_terdekat"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0.25" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:padding="@dimen/spacing_8"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_54"
+            android:layout_marginBottom="@dimen/spacing_7"
+            android:contentDescription="@string/cd_scissor"
+            android:src="@drawable/ic_comb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trending_style"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0.25" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/spacing_8"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_54"
+            android:layout_marginBottom="@dimen/spacing_7"
+            android:contentDescription="@string/cd_scissor"
+            android:src="@drawable/ic_terlaris" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/terlaris"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0.25" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/spacing_8"
+        android:focusable="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_54"
+            android:layout_marginBottom="@dimen/spacing_7"
+            android:contentDescription="@string/cd_scissor"
+            android:src="@drawable/ic_all_menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/semua_barbershop"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+</LinearLayout>

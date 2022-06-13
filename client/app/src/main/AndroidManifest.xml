@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bangkit.ambroise">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.ar" />
+
+    <application
+        android:name="com.bangkit.ambroise.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CapstoneProjectVBarbershop">
+        <activity
+            android:name="com.bangkit.ambroise.ui.message.MessageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.auth.FirstFormActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.camera.ARCameraActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bangkit.ambroise.ui.detail.book.transaction.TicketActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.detail.book.payment.PaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.detail.book.transaction.TransactionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.detail.book.BookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.notification.NotificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.detail.ReviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.detail.DetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.auth.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+        <activity
+            android:name="com.bangkit.ambroise.ui.auth.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LightStatusbar" />
+
+        <meta-data
+            android:name="com.snap.camerakit.app.id"
+            android:value="8a712b2d-2400-4259-aa60-57f7dd839b49" />
+        <meta-data
+            android:name="com.snap.camerakit.api.token"
+            android:value="eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjUzNzc3NTIyLCJzdWIiOiI4YTcxMmIyZC0yNDAwLTQyNTktYWE2MC01N2Y3ZGQ4MzliNDl-U1RBR0lOR344NzJhMzIwMC05OWM3LTQ0Y2UtYjY1MS03MGUyOGNmNDMyMzYifQ.VWL7PL1Erz_NWT0Dt-RO0-8DDsPCYB0B5N7RatFoX0A" />
+    </application>
+
+</manifest>

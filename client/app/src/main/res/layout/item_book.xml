@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/spacing_12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_20">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgBarber"
+                android:layout_width="@dimen/spacing_95"
+                android:layout_height="@dimen/spacing_82"
+                android:src="@drawable/placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="@dimen/spacing_10" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_18"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/dummy_barber"
+                android:textSize="@dimen/font_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgBarber"
+                app:layout_constraintTop_toTopOf="@id/imgBarber" />
+
+            <LinearLayout
+                android:id="@+id/layoutAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:gravity="top"
+                app:layout_constraintEnd_toEndOf="@id/tvTitle"
+                app:layout_constraintStart_toStartOf="@id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_16"
+                    android:layout_height="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_6"
+                    android:contentDescription="@string/cd_location"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:text="@string/dummy_address"
+                    android:textSize="@dimen/font_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:gravity="top"
+                app:layout_constraintEnd_toEndOf="@id/layoutAddress"
+                app:layout_constraintStart_toStartOf="@id/layoutAddress"
+                app:layout_constraintTop_toBottomOf="@id/layoutAddress">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_16"
+                    android:layout_height="@dimen/spacing_16"
+                    android:layout_marginEnd="@dimen/spacing_6"
+                    android:contentDescription="@string/cd_location"
+                    android:src="@drawable/ic_clock" />
+
+                <TextView
+                    android:id="@+id/tvSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:text="@string/dummy_schedule"
+                    android:textSize="@dimen/font_10" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_1"
+            android:layout_marginVertical="@dimen/spacing_12" />
+
+        <LinearLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_outline"
+                android:fontFamily="@font/inter_semibold"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/spacing_12"
+                android:text="@string/cancel_booking"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font_12" />
+
+            <View
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_1" />
+
+            <TextView
+                android:id="@+id/btnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/inter_semibold"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/spacing_12"
+                android:text="@string/view_ticket"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/whiter"
+                android:textSize="@dimen/font_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
