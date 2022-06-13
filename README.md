@@ -30,4 +30,4 @@ Virtual Hairstyle and Smart Barber Application
   2. Android Jetpack
   3. Retrofit
   4. Koin Dependency Injection 
-  5. Kamera kit from Snap AR
+  5. Camera kit from Snap AR
