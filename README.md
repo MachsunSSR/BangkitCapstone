@@ -15,7 +15,8 @@ Virtual Hairstyle and Smart Barber Application
   4. Seaborn
   5. Matplotlib
   6. Tensorflow
-  7. NLTK
+  7. Keras
+  8. NLTK
   
 - Cloud & Backend : 
   1. Strapi
