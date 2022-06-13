@@ -4,9 +4,6 @@
 ## Virtual Hairstyle and Smart Barber Application <br>
 ## [Download Here](https://bit.ly/ApkBangkitCapstone)  
 
-![iPhone 13 Pro](https://user-images.githubusercontent.com/57492781/173279370-07ad0d22-1f22-4277-8aeb-0987e2e3b291.png)
-
-
 # Roles :
 - Machine Learning Developer
 - Cloud & Backend Developer
